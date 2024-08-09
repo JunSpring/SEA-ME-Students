@@ -8,7 +8,8 @@ using namespace std;
 
 class Car
 {
-public:
+// Encapsulation
+protected:
     // Member Variables
     string make;
     string model;
@@ -16,6 +17,13 @@ public:
 
     // Member Function
     void Drive();
+
+public:
+    // Member Functions
+    // Function Overloading
+    Car(); // Constructor
+
+    Car(const string &, const string &, const int &); // Constructor with Initialization Member Variables
 };
 
 

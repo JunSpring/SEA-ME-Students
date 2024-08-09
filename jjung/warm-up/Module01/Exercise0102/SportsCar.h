@@ -4,13 +4,21 @@
 
 #include "Car.h"
 
+// Inheritance
 class SportsCar : public Car
 {
-public:
+// Encapsulation
+private:
     // Member Variable
     int topSpeed;
 
-    // Member Function
+public:
+    // Member Functions
+    // Function Overloading
+    SportsCar(); // Constructor
+
+    SportsCar(const string &, const string &, const int &, const int &); // Constructor with Initialization Member Variables
+
     void Drive();
 };
 
